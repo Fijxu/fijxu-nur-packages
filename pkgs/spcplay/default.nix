@@ -7,7 +7,7 @@
   icoutils,
   imagemagick,
   wineWow64Packages,
-  winePackage ? wineWow64Packages.stagingFull,
+  winePackage ? wineWow64Packages.stable,
 }:
 
 let
