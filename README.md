@@ -2,6 +2,39 @@
 
 Packages that I packaged for myself.
 
+## Using the packages
+
+1. Add the input to your `flake.nix`:
+
+```nix
+  # flake.nix
+
+  inputs = {
+    # ... Your other inputs that are above this one
+    fijxu-nur-packages = {
+      url = "git+https://codeberg.org/fijxu/fijxu-nur-packages";
+    };
+  };
+```
+
+2. Add the default overlay
+
+```nix
+# configration.nix
+
+{
+  inputs,
+  ...
+}:
+{
+  nixpkgs.overlays = [
+    inputs.fijxu-nur-packages.overlays.default
+  ];
+}
+```
+
+To prevent overwritting packages from `nixpkgs`, I used different package names for the packages that are available here, check those [here](./overlays/default.nix)
+
 ## Packages
 
 - [SPCPlay](./pkgs/spcplay/default.nix): <https://github.com/dgrfactory/spcplay>
