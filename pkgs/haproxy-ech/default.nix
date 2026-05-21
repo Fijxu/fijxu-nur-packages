@@ -2,11 +2,11 @@
   haproxy,
   fetchFromGitHub,
   pkgs,
+  openssl-ech ? pkgs.callPackage ../openssl-ech { },
   ...
 }:
 
 let
-  openssl-ech = pkgs.callPackage ../openssl-ech { };
   tag = "v3.4-dev6";
   src = fetchFromGitHub {
     owner = "haproxy";
