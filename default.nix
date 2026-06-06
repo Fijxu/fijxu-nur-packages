@@ -21,4 +21,7 @@
   openmpt-bin = pkgs.callPackage ./pkgs/openmpt { };
   haproxy-ech = pkgsUnstable.callPackage ./pkgs/haproxy-ech { };
   openssl-ech = pkgs.callPackage ./pkgs/openssl-ech { };
+  nginxMainline-ech = pkgs.callPackage ./pkgs/nginxMainline-ech { };
+  angie-ech = pkgs.callPackage ./pkgs/angie-ech { };
+  curl-ech = pkgs.callPackage ./pkgs/curl-ech { };
 }

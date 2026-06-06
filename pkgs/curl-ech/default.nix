@@ -1,13 +1,9 @@
 {
-  # curl,
   curlFull,
-  pkgs,
+  openssl_4_0,
+  openssl-ech ? openssl_4_0,
   ...
 }:
-
-let
-  openssl-ech = pkgs.callPackage ../openssl-ech { };
-in
 
 (curlFull.override {
   openssl = openssl-ech;
