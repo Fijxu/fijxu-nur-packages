@@ -45,5 +45,8 @@
           };
         }
       );
+    }
+    // {
+      nixosModules = (import ./modules { inherit self; });
     };
 }

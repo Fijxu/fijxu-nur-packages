@@ -24,4 +24,5 @@
   nginxMainline-ech = pkgs.callPackage ./pkgs/nginxMainline-ech { };
   angie-ech = pkgs.callPackage ./pkgs/angie-ech { };
   curl-ech = pkgs.callPackage ./pkgs/curl-ech { };
+  rustlog = pkgs.callPackage ./pkgs/rustlog { };
 }
