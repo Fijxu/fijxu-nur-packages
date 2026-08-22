@@ -51,6 +51,6 @@ rustPlatform.buildRustPackage (finalAttrs: {
     homepage = "https://github.com/boring-nick/rustlog";
     license = lib.licenses.mit;
     mainProgram = "rustlog";
-    maintainers = with lib.maintainers; [ Fijxu ];
+    maintainers = with lib.maintainers; [ "fijxu" ];
   };
 })
