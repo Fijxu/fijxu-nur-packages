@@ -39,6 +39,11 @@ To prevent overwritting packages from `nixpkgs`, I used different package names 
 
 - [SPCPlay](./pkgs/spcplay/default.nix): <https://github.com/dgrfactory/spcplay>
 - [OpenMPT](./pkgs/openmpt/default.nix): <https://openmpt.org>
+
+## Deprecated packages
+
+This packages are not needed anymore as you can build HAproxy with the package `openssl_4_0` from `nixpkgs`.
+
 - [HAProxy 3.3.4 with ECH](./pkgs/haproxy-ech/default.nix): <https://github.com/haproxy/haproxy>
   - A build of HAProxy with ECH enabled using [OpenSSL with ECH](./pkgs/openssl-ech/default.nix), (only works in x86-64-v3 CPUs because I'm too lazy to make adapt the Nix package to other shit).
   - This package is being used in production for https://nadeko.net selfhosted services.
