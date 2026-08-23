@@ -35,11 +35,11 @@ let
 in
 stdenv.mkDerivation rec {
   inherit pname;
-  version = "2.21.2.8822";
+  version = "2.21.3.9130";
   name = "spcplay-bin";
   src = fetchzip {
     url = "https://github.com/dgrfactory/spcplay/releases/download/${version}/spcplay-${version}.zip";
-    hash = "sha256-oByNuyg9n9nOso2q2PWYY4pCneX1T1u6ZITEmiD4yyc=";
+    hash = "sha256-Wblf//GU0nWLuSI2TJiTjb2nLra/RyQ391YpYrfmZjI=";
     stripRoot = false;
   };
 

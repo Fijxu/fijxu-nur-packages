@@ -34,11 +34,11 @@ let
 in
 stdenv.mkDerivation rec {
   inherit pname;
-  version = "1.32.06.00";
+  version = "1.32.11.00";
   name = "openmpt-bin";
   src = fetchzip {
     url = "https://download.openmpt.org/archive/openmpt/${lib.versions.majorMinor version}/OpenMPT-${version}-portable-amd64.zip";
-    hash = "sha256-Qg2hNs1B7OyWdOoDBE+igWz8SHBM8orLtY7S4d/3Mkw=";
+    hash = "sha256-zCm3vM9WqYv6DBdqNJwZeYWdLCvUqJc2SfzECH8FTXs=";
     stripRoot = false;
   };
 

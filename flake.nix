@@ -41,6 +41,7 @@
             packages = with pkgs; [
               nixfmt
               nixd
+              nix-update
             ];
           };
         }
