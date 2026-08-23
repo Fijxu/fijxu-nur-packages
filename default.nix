@@ -19,6 +19,5 @@
 
   spcplay-bin = pkgs.callPackage ./pkgs/spcplay { };
   openmpt-bin = pkgs.callPackage ./pkgs/openmpt { };
-  curl-ech = pkgs.callPackage ./pkgs/curl-ech { };
   rustlog = pkgs.callPackage ./pkgs/rustlog { };
 }
